@@ -12,8 +12,6 @@
         content="IE=edge">
   <meta name="viewport"
         content="width=device-width,initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy"
-        content="default-src 'none'; font-src 'self' data:; img-src https://www.google-analytics.com 'self'; frame-ancestors 'none'; object-src 'none'; script-src 'self' https://www.google-analytics.com; style-src 'self'; form-action 'none'; base-uri 'none'; block-all-mixed-content; connect-src 'self' ws:">
   <!-- https://infosec.mozilla.org/guidelines/web_security#referrer-policy-->
   <meta http-equiv="Referrer-Policy"
         content="no-referrer, strict-origin-when-cross-origin">
@@ -29,17 +27,21 @@
   <meta name="apple-mobile-web-app-status-bar-style"
         content="#b02000">
   <link rel="icon"
-        href="<%= BASE_URL %>favicon.png">
+        href="./favicon.png">
   <link rel="shortcut icon"
-        href="<%= BASE_URL %>favicon.png">
+        href="./favicon.png">
   <link rel="stylesheet"
         href="./style.css">
 </head>
 
 <body>
-  <!-- End Google Tag Manager (noscript) -->
-  <noscript id="noscript-app">
+  <div id="app">
     <div class="home">
+      <a href="#">
+      <img src="./avatar.jpg"
+          style="border-radius: 50%; width: 25%; min-width: 80px; max-width: 180px;"
+          alt="Steven Dao's avatar">
+    </a>
       <h1>Hi, I'm Steven Dao.</h1>
       <p>
         I'm building webs with my friends at
@@ -52,9 +54,7 @@
         <li><a href="https://twitter.com/iamstevendao" target="_blank" rel="noopener">Twitter</a></li>
       </ul>
     </div>
-  </noscript>
-  <div id="app"></div>
-  <!-- built files will be auto injected -->
+  </div>
 </body>
 
 </html>
