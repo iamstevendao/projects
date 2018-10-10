@@ -18,14 +18,14 @@ jobs:
           command: sh deploy.sh
 
 workflows:
-   version: 2
-   nightly:
-     triggers:
-       - schedule:
-           cron: "0 0 * * *" # Every day
-           filters:
-             branches:
-               only:
-                 - master
-     jobs:
-       - deploy
+  version: 2
+  nightly:
+    triggers:
+      - schedule:
+          cron: "0 0 * * *" # Every day
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - deploy
