@@ -1,0 +1,4 @@
+[submodule "MonkeyMaths"]
+	path = MonkeyMaths
+	url = https://github.com/iamstevendao/MonkeyMaths.git
+	branch = gh-pages
