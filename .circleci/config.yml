@@ -21,10 +21,10 @@ workflows:
   version: 2
   commit:
     jobs:
-      - deploy
-        filters:
-          branches:
-            only: master
+      - deploy:
+          filters:
+            branches:
+              only: master
   nightly:
     triggers:
       - schedule:
